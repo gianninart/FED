@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+:root {
+    /* HET KLEURENPALET */
+    --color-text: white;
+    --color-background:black;
+
+    --color-background-nav-1:#FFE6CC;
+
+    --color-nav2-background: none;
+    --color-text-nav2:black;
+    --size-whitespace:1em;
+
+}
+
+
+body { /* alles wat hierin zit krijgen allemaal dezelfde waardes */
+    font-family: sans-serif ;
+    text-align: center; /* tekst naar het midden*/
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+header nav:nth-of-type(1) ul{
+    list-style: none; /* haalt puntjes weg */
+    display: flex;  /* er komt een box om de "over ons" etc heen */
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--color-background-nav-1);
+    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;/* monospace, Arial, Helvetica, sans-serif; */
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    height: 2em;
+    }
+
+   
+
+header nav:nth-of-type(2) ul{
+    list-style: none; /* haalt puntjes weg */
+    display: flex;  /* er komt een box om de "over ons" etc heen */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2em;
+    background-color: var(--color-nav2-background);
+    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;/* monospace, Arial, Helvetica, sans-serif; */
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    height: 2em;
+    color: var(--color-text-nav2);
+    }
+
+    ul: a{
+    
+        color: white;
+        text-decoration: none; /* onderstreep weg*/
+        background: #dc3545;
+        }
+
+article{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+article img{
+
+    width: 20em;
+    height: 20em;
+}
+
+section{
+display: flex;
+flex-direction: column;
+}
+
+section h3{
+text-align: start;
+}
+
+section p{
+text-align: start;
+
+}

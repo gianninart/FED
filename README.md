@@ -16,14 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Giannina Titahena
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
-
+Blauwe piste
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
- 
+ Ik wil mijn focus leggen op surface plane. Dit kan echter nog veranderen.
 </details>
 
 
@@ -36,19 +35,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.klarna.com/nl/?grs=https%3A%2F%2Fwww.klarna.com%2F&grr=empty
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagina
+  <img src="./readme-images/screen_pagina1" width="390px" alt="Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Hoe het werkt pagina
+  <img src="./readme-images.screen_pagina2" width="390px" alt="Hoe het werkt">
  
 </details>
 
 
+Ik was deze week ziek. Wil nog wat extra uitleg vragen over dit onderdeel.
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
@@ -91,13 +91,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.jpg" width="390px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -112,6 +112,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  Ik vind het grid onderdeel nog lastig. Echter wil ik dit wel gaan gebruiken voor mijn website.
+  Ik weet wel waar ik grid zou willen gebruiken. Zie foto hieronder.
+
+  Over het algemeen vind ik de css nog lastig.
+  Verder heb ik de toegankelijkheidstest gemist en zou ik hier nog wat meer over willen vragen. Ik loop dus wel een beetje achter.
+
+  Wat ik wel goed vond gaan is het maken van de breakdownschets. Hierdoor creeër je een duidelijker overzicht voor jezelf. Hier loop ik af en toe al tegen dingen aan.
+
 
 
   ### Agenda voor meeting
