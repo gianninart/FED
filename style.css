@@ -1,15 +1,29 @@
 *{
     margin:0;
     padding:0;
-
+    box-sizing: border-box;
 }
+
+@font-face {
+    font-family: futura;
+    src: url(../font/FontsFree-Net-Futura6.ttf);
+        
+  }
+
+  @font-face {
+    font-family: test;
+    src: url(../font/aestetico-formal-bold.otf);
+        
+  }
+
+
 
 :root {
     /* HET KLEURENPALET */
-    --color-text: white;
-    --color-background:black;
+    --color-text: black;
+    --color-background:white;
 
-    --color-background-nav-1:#FFE6CC;
+    --color-background-nav:white;
 
     --color-nav2-background: none;
     --color-text-nav2:black;
@@ -25,64 +39,291 @@ body { /* alles wat hierin zit krijgen allemaal dezelfde waardes */
     color: var(--color-text);
 }
 
-header nav:nth-of-type(1) ul{
+header{
+position: sticky; 
+text-align: left;
+width: 100%;
+height: 5em;
+padding: 1,75em 1,6em ;
+background-color: var(--color-background-nav);
+box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 5%);
+border-bottom: 1px solid #C7C9CC;
+
+}
+
+header nav{
     list-style: none; /* haalt puntjes weg */
     display: flex;  /* er komt een box om de "over ons" etc heen */
     flex-direction: row;
-    align-items: flex-start;
-    background-color: var(--color-background-nav-1);
-    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;/* monospace, Arial, Helvetica, sans-serif; */
-    font-size: 15px;
+    font-family: sans-serif;
+    font-size: 15px; 
     letter-spacing: 0.5px;
-    height: 2em;
-    }
-
-   
-
-header nav:nth-of-type(2) ul{
-    list-style: none; /* haalt puntjes weg */
-    display: flex;  /* er komt een box om de "over ons" etc heen */
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 2em;
-    background-color: var(--color-nav2-background);
-    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;/* monospace, Arial, Helvetica, sans-serif; */
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    height: 2em;
-    color: var(--color-text-nav2);
-    }
-
-    ul: a{
+    height: 5em;
+    top: 0;
+ 
     
-        color: white;
-        text-decoration: none; /* onderstreep weg*/
-        background: #dc3545;
-        }
+}
 
-article{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+header nav button:nth-of-type(1){
+margin-left: 11em;
+margin-top:1.5em;
+margin-bottom:1.5em ;
+padding: 0.3em 0.75em 0.3em 0.75em;
+border-radius: 3em;
+border-width: 0.05em;
+border-color: grey;
 
 }
 
-article img{
+header nav button:nth-of-type(2){
+    margin-left: 1em;
+    }
 
-    width: 20em;
-    height: 20em;
-}
+    header nav img{
+    width:5em ;
+    height: 5em;
+    margin-left: 1.5em;
 
-section{
+    }
+
+img{
+    width: 23em;
+    height: 11em;
+    }
+
+
+section:nth-of-type(1){
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+text-align: left;
+font-family: "futura";
+margin: 1em 2em 2em 1.5em;
+
+
+
+}
+section:nth-of-type(1) h1{
+    font-size: 3em;
+    font-weight: lighter;
+    line-height: 100%;
+    letter-spacing: 0.01em;
 }
 
-section h3{
-text-align: start;
+section:nth-of-type(1) p{
+    
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+
 }
 
-section p{
-text-align: start;
+section:nth-of-type(1) a{
+    display: flex;
+    justify-content: center;
+
+    padding: 0.9em;
+    font-size: 1em;
+    color:white;
+    background-color:black;
+    text-decoration: none;
+    width: 12em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 1.2em;
+    margin-top: 4em;
+    text-align: left;
+    margin-left: 1.5em;
+    font-weight: 10;
+}
+
+section:nth-of-type(2){
+    display: flex;
+    overflow-x: scroll;
+    list-style-type: none;
+    margin: 1em 2em 2em 1.5em;
 
 }
+
+
+section:nth-of-type(2) img{
+    margin-top: 0.5em;
+    padding-right: 2em;
+    width: 19em;
+    height:13em;
+   
+}
+
+section:nth-of-type(2) p{
+text-align: left;
+margin-top: 1em;
+}
+
+h2:nth-of-type(2){
+    margin: 5em 1.5em 2em 1em;
+    font-family: "test";
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+}
+
+section:nth-of-type(3){
+    margin: 1em 2em 2em 1.5em;
+}
+
+section:nth-of-type(3) ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20em);
+
+
+}
+
+section:nth-of-type(3) li{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    list-style: none;
+    margin-bottom: 3em;
+}
+section:nth-of-type(3) img{
+width: 20.3em;
+height: 20.3em;
+
+}
+
+section:nth-of-type(3) h3{
+margin-top: 2em;
+margin-bottom: 0.5em;
+font-size: 1em;
+}
+
+section:nth-of-type(3) p{
+line-height: 1.5em;
+letter-spacing: 0.05em;
+
+}
+
+section:nth-of-type(4){
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1em 2em 2em 1.5em;
+}
+
+section:nth-of-type(4) img{
+    order:-3;
+    width: auto;
+    height: auto;
+    margin-top: 4em;
+}
+
+section:nth-of-type(4) h2{
+order: -1;
+margin:0;
+margin-top:0.2em;
+font-size: 2.2em;
+font-weight: 750;
+
+}
+section:nth-of-type(4) h3{
+order: -2;
+margin-top: 1.5em;
+font-weight: 600;
+font-size: 1em;
+}
+section:nth-of-type(4) h4{
+order: 0;
+font-size: 1.1em;
+    letter-spacing: 0.07em;
+    margin-top: 1em;
+    font-weight: 1;
+color: black;
+}
+
+section:nth-of-type(4) ul{
+order:1;
+margin-top: 0.5em;
+margin-left: 3em;
+
+font-size: 1em;
+line-height: 1.5em;
+letter-spacing: 0.02em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section:nth-of-type(5) img{
+    width: 20em;
+    height: 20em;
+    
+    
+    }
+
+section:nth-of-type(6){
+    background-color: #FFE6CC;
+    padding-top: 3.9rem;
+}
+
+section:nth-of-type(6) h2{
+    margin: 0em 1.5em 2em 1em;
+    font-family: "test";
+    font-size: 1.5em;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+}
+
+section:nth-of-type(6) p{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+    margin: 0em 1.5em 2em 1em;
+}
+section:nth-of-type(6) ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,11em);
+    padding: 0;
+    margin: 0;
+}
+
+section:nth-of-type(6) li {
+    margin-left:1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9em;
+    list-style: none;
+    
+}
+
+
+section:nth-of-type(6) img{
+    width: 9.4em;
+    height: auto;
+}
+
+
