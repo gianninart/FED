@@ -39,11 +39,11 @@ Blauwe piste
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina
-  <img src="readme-images/screen_pagina1.png" width="390px" alt="Homepagina">
+  <img src="./readme-images/screen_pagina1.png" width="390px" alt="Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Hoe het werkt pagina
-  <img src="readme-images/screen_pagina2.png" width="390px" alt="Hoe het werkt">
+  <img src="./readme-images/screen_pagina2.png" width="390px" alt="Hoe het werkt">
  
 </details>
 
