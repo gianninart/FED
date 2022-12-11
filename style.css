@@ -42,7 +42,7 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     text-align: left;
     width: 100%;
     height: 5em;
@@ -59,9 +59,7 @@ header {
     font-family: sans-serif;
     font-size: 15px;
     letter-spacing: 0.5px;
-    height: 5em;
     top: 0;
-
 
 }
 
@@ -84,7 +82,68 @@ header img {
     width: 5em;
     height: 5em;
     margin-left: 1.5em;
+}
 
+header nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+    display: none;
+
+  
+}
+
+header nav section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: pink;
+    width: 100vw;
+    margin:0;
+}
+
+header nav section:first-of-type button{
+    margin-right: 3em;
+    border:none;
+    background-color: transparent;
+}
+
+header nav section:first-of-type button img{
+    width: 1.2em;
+    height:1.2em;
+}
+
+header nav ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+
+.toonMenu {
+    display: block;
+
+}
+
+header > button {
+    background-color: white;
+}
+
+header > button:nth-of-type(2) {
+    border: none;
+}
+
+header button img {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    margin: 0;
 }
 
 img {
@@ -370,6 +429,7 @@ section:nth-of-type(6) img {
 }
 
 section:nth-of-type(6) a {
+    display: inline-block;
     color: black;
     text-decoration: none;
     margin: 5em;
@@ -547,6 +607,7 @@ footer details a {
 
 }
 
+
 footer select {
     height: 3.75em;
     width: 20em;
@@ -559,6 +620,29 @@ footer select {
     margin-top: 2.5em;
 }
 
+footer section:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer section:first-of-type a {
+    background-color: white;
+    padding: 0.7em;    
+    margin: 1em;
+    display: inline;
+    width: auto;
+
+}
+
+footer section:first-of-type a img{
+    width: 1.2em;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
 footer p {
     text-align: left;
     font-size: 0.75em;
@@ -566,14 +650,22 @@ footer p {
     margin: 4em 2.5em 0 1.5em;
 }
 
-
-/* footer ul a{
-    margin:0;
+footer > ul {
+    margin: 1.5em 0 2em 1.5em;
     text-align: left;
+    list-style: none;
+}
+
+footer > ul li {
+    padding: 0.25em 0;
+}
+
+footer > ul a{
+    color: white;
     text-decoration: none;
     font-size:0.75em;
     line-height: 130%;
-} */
+}
 
 
 /* footer a img{
