@@ -176,7 +176,8 @@ a {
   }
   
  a:visited {
-    background-color: white;
+    background-color:red;
+    var(--link-hover-background-color):black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     border: 0.1em solid black;
