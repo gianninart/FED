@@ -28,6 +28,14 @@
     --color-nav2-background: none;
     --color-text-nav2: black;
     --size-whitespace: 1em;
+/* -------------------------------------------- link */
+    --link-color:white; /* darker SeaGreen */
+    --link-background-color: black;
+    --link-visited-color:DarkSlateBlue;
+    --link-visited-background-color:white;
+    --link-hover-background-color:rgb(72, 72, 72);
+    --link-active-color:black;
+    --link-active-background-color:white;
 
 }
 
@@ -40,6 +48,8 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
 }
+
+
 
 header {
     position: fixed;
@@ -124,22 +134,13 @@ header nav section:first-of-type button img{
 header nav ul li a{
     display: flex;
     text-align: left;
-
-
+    background-color: transparent;
     color: black;
-    padding: 0.9em;
-    font-size: 1.2em;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1em;
-    font-weight: 600;
-    border-bottom: 0.001em solid rgb(239, 239, 239);
+    
 }
-
 
 .toonMenu {
     display: block;
-
 }
 
 header > button {
@@ -162,6 +163,55 @@ img {
     height: 11em;
 }
 
+a {
+    padding: 0.9em;
+    font-size: 1em;
+    text-decoration: none;
+    width: 12em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2em;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+  }
+  
+ a:visited {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    border: 0.1em solid black;
+  }
+  
+a:focus {
+    /* het is best een goed idee om de :focus van een link te laten opvallen */
+    /* als je met de tab-toets door een pagina gaat, zie je dan goed waar je elke keer geland bent */
+    background:var(--link-background-color);
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset: 2px;
+  }
+  
+a:hover {
+    /* text-decoration:underline; */
+    text-decoration-thickness:2px;
+    text-underline-offset: 2px;
+    background-color: var(--link-hover-background-color);
+  }
+  
+ a:active {
+    /* als alles lekker snel gaat zie je dit niet */
+    /* maar des te meer reden om de :active state wel te definieren */
+    /* juist als iets traag verloopt, krijg je dan feedback */
+    color:var(--link-active-color);
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset: 2px;
+    background-color: var(--link-active-background-color);
+    box-shadow: 1em;        
+
+  
+  }
+  
 
 section:nth-of-type(1) {
     display: flex;
@@ -190,21 +240,28 @@ section:nth-of-type(1) p {
 
 }
 
-section:nth-of-type(1) a {
+/* section:nth-of-type(1) a {
     display: flex;
     justify-content: center;
     text-align: center;
+    color:var(--link-color);
+    background-color: var(--link-background-color);
 
-    padding: 0.9em;
-    font-size: 1em;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    width: 12em;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2em;
-    font-weight: 600;
 }
+
+section:nth-of-type(1) a:focus{
+    
+}
+
+section:nth-of-type(1) a:hover{
+    background-color: var(--link-hover-background-color);
+}
+
+section:nth-of-type(1) a:active{
+color: var(link);
+background-color: var(--link-active-background-color);
+} */
+
 
 h2 {
     font-size: 1.2em;
@@ -338,9 +395,6 @@ section:nth-of-type(4) a {
     padding: 1em;
     text-align: center;
     font-size: 1em;
-    color: white;
-    background-color: black;
-    text-decoration: none;
     width: 12em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -383,12 +437,8 @@ section:nth-of-type(5) a {
     padding: 1em;
     text-align: center;
     font-size: 1em;
-    color: white;
-    background-color: black;
     text-decoration: none;
     width: 12em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
 }
 
 section:nth-of-type(6) {
@@ -573,18 +623,21 @@ section:nth-of-type(9) a {
  .betalen section:nth-of-type(1){
         background-color: #ffb3c7;
         margin-top: 3em;
-        padding: 4em 8em 4em 4em;
+        padding: 3em 5em 4em 2em;
         margin-right: 0;
         margin-left: 0;
     }
 
 .betalen section:nth-of-type(1) h1{
-        font-size: 3em;
+        font-size: 2.7em;
         font-family: "test";
         font-weight: lighter;
         line-height: 100%;
         letter-spacing: 0.01em;
         margin:0;
+        text-align: left;
+        width: 6em;
+        
               
 }
 
@@ -959,32 +1012,59 @@ section:nth-of-type(10) li a:nth-of-type(){
     margin-top: 0.5em;
     font-weight: 600;
 }
-
 section:nth-of-type(11){
+
+    background-color:aquamarine;
+
+}
+
+section:nth-of-type(11) iframe{
+    margin: 2em 1.1em 2em 0.5em;
+    width: 20em;
+    height: 15em;
+}
+
+section:nth-of-type(12){
     display: flex;
     flex-direction: column;
     background-color: #ffb3c7;
+    height: 27em;
 
 }
 
-section:nth-of-type(11) h2{
+section:nth-of-type(12) h2{
     text-align: left;
     font-family: "test";
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 130%;
     letter-spacing: 0.02em;  
-    margin-left: 1.5em;
+    margin-left: 1.1em;
+    margin-top: 2.2em;
 }
 
-section:nth-of-type(11) p{
-    font-size: 1.1em;
+section:nth-of-type(12) p{
+    font-size: 1.2em;
     letter-spacing: 0.03em;
     font-weight: 1;
-    margin: 0;
-    margin-top: 1em;
+    margin: 1em 1.5em 3em 1.5em;
     font-family:Arial, Helvetica, sans-serif ;
  
 }
+
+section:nth-of-type(12) a{
+    margin: 0 0 0 2em;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 9em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; 
+     
+}
+
 
 
 
