@@ -214,6 +214,7 @@ header nav section:first-of-type {
 header nav section:first-of-type button {
     margin-right: 1em;
     border: none;
+    background-color: transparent;
 }
 
 header nav section:first-of-type button:hover {
@@ -255,20 +256,18 @@ header nav ul li a {
 
 }
 
-header nav ul li a:focus{
-    border: none;
-    background-color:none;
-    color:none;
-}
 
 header nav ul li a:hover{
     border:none;
-    background-color:none;
+    background-color:transparent;
+    color:var(--link-hover-nobackground-color);
 }
 
 header nav ul li a:active{
 border: none;
-background-color:none;
+background-color:transparent;
+color: var(--link-active-nobackground-color);
+text-decoration: underline;
 
 }
 
