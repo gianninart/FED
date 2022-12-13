@@ -426,7 +426,6 @@ section:nth-of-type(2) p {
 h2:nth-of-type(2) {
     font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    font-weight: lighter;
     line-height: 130%;
     letter-spacing: 0.02em;
     margin: 5em 1em 0em 1em;

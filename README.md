@@ -59,9 +59,11 @@ Blauwe piste
   waardoor je niet weet wat p tekst is en wat een H is.
   Een link werd overgeslagen. "Zie alle kortingen".
 
+
   Afbeeldingen worden niet beschreven, maar er stond alleen bij, bij welk onderdeel het
   hoort.
 
+  Verschillende H meegeven zodat de gebruiker ook begrijpt wat het onderwerp is van bepaalde onderdelen.
   Ik zou alt tekst kunnen toevoegen zodat de afbeelding ook wordt beschreven.
 
   #### Muis en Toetsenbord 
@@ -76,15 +78,25 @@ Blauwe piste
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Doordat de o.a. de tab toets en enter niet goed werkt en kan je het toetsenboard al niet gebruiken. De screenreader werkt ook niet goed, waardoor het niet fijn is om de website te gebruiken met een motorische beperking.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+De link in bijvoorbeeld het deel met alle merken is heel moeilijk met de touchpad aan te klikken, omdat je op tekst moet klikken.
+
+Je zou dit kunnnen oplossen door er meer een soort button van te maken, waardoor je niet op een specifiek onderdeel hoeft te klikken.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ Blurred vision: niet alle teksten zijn goed leesbaar.
+ Wat opvalt is dat niet linkjes opvallen. De a's met een een zwarte background en witte tekst die lijken op een button vallen wel op. De link in bijvoorbeeld het deel met de verschillende merken is niet goed zichtbaar.
+ De tekst op de afbeeldingen zijn ook niet goed zichtbaar.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ Je zou dit kunnen oplossen door ervoor te zorgen dat je de tekst zelf groter en kleiner kan maken. Verder zou je alle linkjes zo kunnen stylen dat ze wel opvallen.
+
+Kleurenblind:
+Footer is goed te onderscheiden door de zwarte achtergrond. Het deel waar alle merken staan is nu minder een geheel, omdat de achtergrondkleur wegvalt. Dit zou je kunnen oplossen door een meer donkere kleur te kiezen voor de achtergron, waardoor het dan iets grijzer wordt als je geen kleur kan zien.
+Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Doordat bijna alle linkjes ene zwarte achtergrond hebben vallen ze wel op.
+
 
 </details>
 
@@ -96,10 +108,10 @@ Blauwe piste
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown.jpg" width="390px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png"  alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown_menu.png"  alt="breakdown menu">
 
 </details>
 
@@ -198,27 +210,22 @@ Student 2:
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  De screenreader leest alles voor. Kopjes worden benoemnd en ook de linkjes en button worden benoemd, waardoor de gebruiker weet of hij/zij ergens op kan klikken.
+  Wat ik nog wel kan verbeteren zijn de alt teksten. Bij sommige alt teksten heb ik het woord afbeelding erin waardoor het twee keer herhaald wordt.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Doordat ik nu gebruik heb gemaakt van de a en buttons kan gemakkelijk door de websie heen navigeren met tab en enter.
+  Bij het onderdeel waar je een taal kan kiezen (footer) kan je op tab drukken waardoor je op de taal terecht komt. Vervolgens kan je op enter drukken en dan zie je alle taalopties. Met de pijltjes kan je vervolgens weer een taal kiezen en selecteren met enter.
+  Echter kan ik de focus state nog beter aangeven bij dit onderdeel. Ik kan dit doen door bijvoorbeeld een border toe te voegen aan mijn focus state.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Doordat je door de website heen kan tabben maakt het de website gebruiksvreindelijker. Ik hoef de linkjes nu niet met mijn muis aan te klikken.
+  Sommige linkjes zouden nog wel opvallender en groter kunnen (button idee), want die zijn moeilijk aan te klikken.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  #### Visueel (brillen, contrast, kleurenblind, dark/light).
+  Niet alle tekst is goed leesbaar als je geen goed zicht hebt. Je zou dit kunnen oplossen door de tekstgrootte aan te passen. Dit moet de gebruiker dan zelf kunnen doen. 
+  Wat opvalt door met blurred vision zijn de linkjes. Dit kom o.a. door de verschillende states die ik heb meegegeven. Zowel de focus, hover en active zijn nog steeds zichtbaar. Hetzelfde geldt voor mensen die kleurenblind zijn. Door de states kan de gebruiker nog steeds zonder problemen gebruik maken van de website.
 
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
