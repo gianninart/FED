@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Blauwe piste
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
- Ik wil mijn focus leggen op surface plane. Dit kan echter nog veranderen.
+  Ik wil mijn focus leggen op surface plane.
 </details>
 
 
@@ -39,11 +39,11 @@ Blauwe piste
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina
-  <img src="./readme-images/screen_pagina1.png" width="390px" alt="Homepagina">
+  <img src="./readme-images/screenshot_pagina1.png" width="375px" alt="Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Hoe het werkt pagina
-  <img src="./readme-images/screen_pagina2.png" width="390px" alt="Hoe het werkt">
+  <img src="./readme-images/screenshot_pagina2.png" width="375px" alt="Hoe het werkt">
  
 </details>
 
@@ -59,15 +59,24 @@ Ik was deze week ziek. Wil nog wat extra uitleg vragen over dit onderdeel.
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Bijna alles is bijna kopniveau 2. Bij veel "kopjes" wordt er geen H meegegegeven      
+  waardoor je niet weet wat p tekst is en wat een H is.
+  Een link werd overgeslagen. "Zie alle kortingen".
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Afbeeldingen worden niet beschreven, maar er stond alleen bij bij welk onderdeel het
+  hoort.
 
+  Ik zou alt tekst kunnen toevoegen zodat de afbeelding ook wordt beschreven.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  De states zijn niet volledig uitgewerkt. Je ziet niet wanneer buttons/links etc. zijn 
+   geselecteerd.
+  In bijvoorbeeld de footer kan ik niet zien wanneer de linkjes geselecteerd zijn.  
+   Verder worden de afbeeldingen bij "winkels in de spotlight" geselecteerd,maar weet ik 
+  dit niet. Je ziet opeens de afbeeldingen veranderen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Ik ga gebruik maken van a om ervoor te zorgen dat je door de linkjes kan selecteren.
+Verder ga ik een focus state maken zodat de gebruiker ziet waar hij zich bevindt.
 
 
   #### Motoriek (shocks, elastiekjes)
