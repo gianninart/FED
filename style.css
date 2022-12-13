@@ -36,6 +36,8 @@
     --link-hover-background-color:rgb(72, 72, 72);
     --link-active-color:black;
     --link-active-background-color:white;
+    --link-focus-background-color: #ffb3c7;
+    --link-focus-color: black;
 
 }
 
@@ -73,6 +75,7 @@ header {
 
 }
 
+
 header button:nth-of-type(1) {
     margin-left: 11em;
     margin-top: 1.5em;
@@ -88,11 +91,13 @@ header button:nth-of-type(2) {
     margin-left: 1em;
 }
 
+
 header img {
     width: 5em;
     height: 5em;
     margin-left: 1.5em;
 }
+
 
 header nav {
     position: fixed;
@@ -130,6 +135,8 @@ header nav section:first-of-type button img{
     width: 1.2em;
     height:1.2em;
 }
+
+
 
 header nav ul li a{
     display: flex;
@@ -175,41 +182,21 @@ a {
     background-color: black;
   }
   
- a:visited {
-    background-color:red;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    border: 0.1em solid black;
-  }
-  
 a:focus {
-    /* het is best een goed idee om de :focus van een link te laten opvallen */
-    /* als je met de tab-toets door een pagina gaat, zie je dan goed waar je elke keer geland bent */
-    background:var(--link-background-color);
-    text-decoration:underline;
-    text-decoration-thickness:2px;
-    text-underline-offset: 2px;
+    border: 0.1em solid white;
+    border-width: 0.3em;
+
   }
   
 a:hover {
     /* text-decoration:underline; */
-    text-decoration-thickness:2px;
-    text-underline-offset: 2px;
     background-color: var(--link-hover-background-color);
   }
   
  a:active {
-    /* als alles lekker snel gaat zie je dit niet */
-    /* maar des te meer reden om de :active state wel te definieren */
-    /* juist als iets traag verloopt, krijg je dan feedback */
-    color:var(--link-active-color);
-    text-decoration:underline;
-    text-decoration-thickness:2px;
-    text-underline-offset: 2px;
+    color:var(--link-active-color); 
     background-color: var(--link-active-background-color);
-    box-shadow: 1em;        
-
-  
+    border: solid 2px black;
   }
   
 
@@ -222,13 +209,34 @@ section:nth-of-type(1) {
     font-family: "futura";
     margin: 1em 2em 2em 1.5em;
 
+    transform: translate(-0.1 -0.2em -0.2em -0.5em);
+
 }
 
 section:nth-of-type(1) h1 {
-    font-size: 3em;
-    font-weight: lighter;
+    font-size: 2.5em;
+    font-family: "test";
     line-height: 100%;
     letter-spacing: 0.01em;
+    font-weight:500 ;
+    
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: white;
+        margin-bottom: -0.01em;
+    }
+    10%{
+        letter-spacing: 0.5em;
+        margin-bottom: -0.01em;
+
+    }
+    40%{
+        letter-spacing: 0.1em;
+        margin-bottom: -.01em;
+    }
 }
 
 section:nth-of-type(1) p {
@@ -240,27 +248,11 @@ section:nth-of-type(1) p {
 
 }
 
-/* section:nth-of-type(1) a {
+section:nth-of-type(1) a {
     display: flex;
     justify-content: center;
     text-align: center;
-    color:var(--link-color);
-    background-color: var(--link-background-color);
-
 }
-
-section:nth-of-type(1) a:focus{
-    
-}
-
-section:nth-of-type(1) a:hover{
-    background-color: var(--link-hover-background-color);
-}
-
-section:nth-of-type(1) a:active{
-color: var(link);
-background-color: var(--link-active-background-color);
-} */
 
 
 h2 {
@@ -617,6 +609,69 @@ section:nth-of-type(9) a {
     font-weight: 600;
 }
 
+section:nth-of-type(10){
+display: flex;
+justify-content: space-between;
+margin: 2em 0 2em 1.5em;
+align-items: center;
+}
+
+section:nth-of-type(10) h5{
+  font-family: "test";  
+  font-size: 1em;
+}
+
+section:nth-of-type(10) label{
+position: relative;
+display: inline-block;
+width: 5.6em;
+height: 2.5em;
+margin: 0 2em 0 0;
+
+}
+
+section:nth-of-type(10) label input{
+    display: none;
+  
+}
+
+span{
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    z-index: -999;
+ }
+
+
+span:before{
+position:absolute;
+content:"";
+height: 30px;
+width:30px;
+left:55px;
+bottom:5px;
+background-color: white;
+transition:0.4s;
+border-radius: 25px;
+
+}
+
+input:checked + span{
+    background-color:#61ce4b ;
+    
+}
+
+input:checked + span:before{
+    transform: translateX(-50px);
+}
+
+
 /* -------------------------------------------------------------betalen
  */
 
@@ -938,7 +993,7 @@ flex-direction: column;
     margin: 80em 2em 2em 1.5em;
 }
 
-section:nth-of-type(10) h2 {
+.betalen section:nth-of-type(10) h2 {
     text-align: left;
     font-family: "test";
     margin: 0;
@@ -947,12 +1002,12 @@ section:nth-of-type(10) h2 {
     letter-spacing: 0.02em;
 }
 
-section:nth-of-type(10) ul {
+.betalen section:nth-of-type(10) ul {
     list-style: none;
     margin-top: 4em;
 }
 
-section:nth-of-type(10) li {
+.betalen section:nth-of-type(10) li {
     display: flex;
     flex-direction: column;
     border: 0.01em solid rgb(196, 196, 196);
@@ -960,7 +1015,7 @@ section:nth-of-type(10) li {
     margin-bottom: 1.5em;
 }
 
-section:nth-of-type(10) li h3 {
+.betalen section:nth-of-type(10) li h3 {
     text-align: left;
     font-family: "test";
     font-size: 1.5em;
@@ -969,7 +1024,7 @@ section:nth-of-type(10) li h3 {
 
 }
 
-section:nth-of-type(10) li p {
+.betalen section:nth-of-type(10) li p {
     font-size: 1em;
     text-align: left;
     line-height: 1.5em;
@@ -983,7 +1038,7 @@ section:nth-of-type(10) li p {
     
 }
 
-section:nth-of-type(10) li a{
+.betalen section:nth-of-type(10) li a{
     margin:0;
     text-align: center;
 
@@ -998,7 +1053,7 @@ section:nth-of-type(10) li a{
     font-weight: 600;
 }
 
-section:nth-of-type(10) li a:nth-of-type(){
+.betalen section:nth-of-type(10) li a:nth-of-type(){
     margin:0;
     text-align: center;
 
