@@ -367,7 +367,7 @@ section:nth-of-type(1) {
 
 section:nth-of-type(1) h1 {
     font-size: 2.5em;
-    font-family: "aestetico", sans-serif;
+    font-family: "aestetico", Arial,sans-serif;
     line-height: 100%;
     letter-spacing: 0.01em;
     font-weight: 500;
