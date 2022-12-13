@@ -23,7 +23,7 @@
     --color-background-nav: white;
     --size-whitespace: 1em;
 
-    --button-border-color: grey;
+    --button-border-color: rgb(189, 189, 189);
     --button-background-color: white;
 
     --merken-background-color: #FFE6CC;
@@ -36,13 +36,18 @@
     --link-background-color: black;
     --link-visited-color: DarkSlateBlue;
     --link-visited-background-color: white;
-    --link-hover-background-color: rgb(72, 72, 72);
-    --link-active-color: black;
-    --link-active-background-color: white;
+    --link-active-background-color: #5d5d5d;
+    --link-active-color:white;
+    --link-hover-color: black;
+    --link-hover-background-color: white;
     --link-focus-background-color: #ffb3c7;
     --link-focus-color: black;
+    --link-focus-border: #4573ff;
+
+    --header-border-bottom:#C7C9CC;
 
     --link-hover-nobackground-color: grey;
+    --link-active-nobackground-color: black;
     --betalen-link-nobackground-color: #487B94;
 
 }
@@ -67,7 +72,7 @@ header {
     padding: 1, 75em 1, 6em;
     background-color: var(--color-background-nav);
     box-shadow: 0 0.125em 0.4em 0 rgb(0 0 0 / 5%);
-    border-bottom: 0.06em solid #C7C9CC;
+    border-bottom: 0.06em solid var(--header-border-bottom);
 
     list-style: none;
     display: flex;
@@ -80,17 +85,10 @@ header {
 
 }
 
-header>img {
+header > img {
     width: 5em;
     height: 5em;
     margin-left: 1.5em;
-}
-
-header div img {
-    margin-left: 0;
-    width: 0.7em;
-    transform: rotate(270deg);
-
 }
 
 header div {
@@ -135,22 +133,56 @@ header div {
     }
 }
 
-
-header button:nth-of-type(1) {
-    margin-left: 11em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 0.3em 0.75em 0.3em 0.75em;
-    border-radius: 3em;
-    border-width: 0.05em;
-    border-color: var(--button-border-color);
+header div img {
+    margin-left: 0;
+    width: 0.7em;
+    transform: rotate(270deg);
 
 }
+
+header button:nth-of-type(1) {
+    cursor: pointer;
+    margin: 1.5em 0 1.5em 11em ;
+    padding: 0em 0.75em 0em 0.75em;
+    border-radius: 3em;
+    border: solid thin var(--button-border-color);
+    width: 5em;
+
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+header button:nth-of-type(1):focus{
+    border:0.5em  solid var(--link-focus-border);
+    border-width: 0.2em;
+}
+
+header button:nth-of-type(1):hover{
+background-color: black;
+color:white;
+}
+
+header button:nth-of-type(1):active{
+    color:var(--link-active-color);
+    background-color:var(--link-active-background-color) ;
+}
+
+
 
 header button:nth-of-type(2) {
     margin-left: 1em;
+    cursor: pointer;
 }
 
+
+header button:nth-of-type(2) img {
+    width: 1.5em;
+    height:1.5em;
+}
+
+header nav section button{
+    
+}
 
 header nav {
     position: fixed;
@@ -162,10 +194,9 @@ header nav {
     z-index: 9999;
     display: none;
 
-
 }
 
-header nav section:first-of-type {
+header nav section:first-of-type{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -174,14 +205,27 @@ header nav section:first-of-type {
 
     background-color: var(--color-background-nav);
     box-shadow: 0 0.125em 0.4em 0 rgb(0 0 0 / 5%);
-    border-bottom: 0.06em solid #C7C9CC;
+    border-bottom: 0.06em solid var(--header-border-bottom);
 
 }
 
 header nav section:first-of-type button {
-    margin-right: 3em;
+    margin-right: 1em;
     border: none;
     background-color: transparent;
+}
+
+header nav section:first-of-type(1) button:hover{
+    border:none;
+    background-color: none;
+    color: none;
+}
+
+header nav section:first-of-type(1) button:active{
+    border:none;
+    background-color:none;
+    color: none;
+
 }
 
 header nav section:first-of-type button img {
@@ -222,23 +266,25 @@ main img:first-child {
 }
 
 
-main img:nth-of-type(2) {
-    top: -15vw;
-    width: 4em;
-    height: 4em;
-    left: -7em;
-    animation: sleeAnimaton 4s infinite ease;
+main img:nth-of-type(2){
+    position: relative;
+    top: -5vw;
+    width: 5em;
+    height: 5em;
+    left: -13em;
+    margin-bottom: 0;
+    animation: sleeAnimation 4s infinite ease;
 }
 
-@keyframes sleeAnimation {
+@keyframes sleeAnimation{
     from {
-        left: -7em;
+        left:-13em;
     }
-
     to {
-        left: 110vw;
+        left: 14em;
     }
 }
+
 
 a {
     padding: 0.9em;
@@ -248,29 +294,29 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 2em;
     font-weight: 600;
-    color: white;
-    background-color: black;
+    color: var(--link-color);
+    background-color: var(--link-background-color);
 
     overflow: hidden;
     transition: 0.2s
-}
+}   
 
 a:focus {
-    border: 0.1em solid white;
-    border-width: 0.3em;
+    border:0.5em  solid var(--link-focus-border);
+    border-width: 0.2em;
 
 }
 
 a:hover {
-    /* text-decoration:underline; */
-    /*     background-color: var(--link-hover-background-color); */
-    box-shadow: 0 0 0.6em rgb(255, 91, 91), 0 0 2.5em rgb(255, 91, 91), 0 0 0.6em rgb(255, 91, 91);
+    color: var(--link-hover-color);
+    background-color: var(--link-hover-background-color);
+    border: solid 0.05em black;
+    box-shadow:none;
 }
 
 a:active {
-    color: var(--link-active-color);
-    background-color: var(--link-active-background-color);
-    border: solid 0.125em black;
+    color:var(--link-active-color);
+    background-color:var(--link-active-background-color) ;
 }
 
 
@@ -293,10 +339,10 @@ section:nth-of-type(1) h1 {
     letter-spacing: 0.01em;
     font-weight: 500;
 
-    animation: text 3s 1;
+  /*   animation: text 3s 1; */
 }
 
-@keyframes text {
+/* @keyframes text {
     0% {
         color: white;
         margin-bottom: -0.01em;
@@ -306,7 +352,7 @@ section:nth-of-type(1) h1 {
         letter-spacing: 0.5em;
         margin-bottom: -0.01em;
     }
-}
+} */
 
 section:nth-of-type(1) p {
 
@@ -330,6 +376,7 @@ h2 {
     text-align: left;
     margin-left: 1.5em;
     font-weight: 10;
+    margin-bottom: 0; 
 }
 
 section:nth-of-type(2) {
@@ -355,7 +402,6 @@ section:nth-of-type(2) p {
 }
 
 h2:nth-of-type(2) {
-    margin: 5em 1.5em 2em 1em;
     font-family: "aestetico";
     font-size: 1.5em;
     font-weight: lighter;
@@ -556,25 +602,20 @@ section:nth-of-type(6) a {
     background: none;
     font-family: inherit;
     margin-left: 1.5em;
-}
-
-section:nth-of-type(6) a:focus {
-    text-decoration: underline;
-    border: none;
-
-
-}
+}   
 
 section:nth-of-type(6) a:hover {
     background-color: none;
     box-shadow: none;
     color: var(--link-hover-nobackground-color);
+    border: none;
 }
 
 section:nth-of-type(6) a:active {
-    color: var(--link-active-color);
+    color: var(--link-active-nobackground-color);
     background-color: none;
     border: none;
+    text-decoration: underline;
 }
 
 
