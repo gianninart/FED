@@ -10,6 +10,12 @@
 
 }
 
+@font-face {
+    font-family: aestetico;
+    src: url(../font/aestetico-formal-bold.otf);
+
+}
+
 :root {
     /* HET KLEURENPALET */
     --color-text: black;
@@ -41,14 +47,14 @@
     --header-border-bottom: #C7C9CC;
 
     --betalen-link-nobackground-color: #487B94;
-    --betalen-link-text-color: black;
+    --betalen-link-text-color:black;
 
     --footer-background-color: black;
     --footer-text-color: white;
     --footer-summary-text-color: #ffb3c7;
     --footer-details-link-focus-border: white;
     --footer-details-link-active: #5d5d5d;
-    --footer-details-hover-color: #487B94;
+    --footer-details-hover-color:#487B94;
 
 
 }
@@ -228,13 +234,13 @@ header nav section:first-of-type button img {
     height: 1.2em;
 }
 
-header nav ul {
+header nav ul{
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top:1em;
 }
 
-header nav ul li {
+header nav ul li{
     padding: 0;
 }
 
@@ -251,17 +257,17 @@ header nav ul li a {
 }
 
 
-header nav ul li a:hover {
-    border: none;
-    background-color: transparent;
-    color: var(--link-hover-nobackground-color);
+header nav ul li a:hover{
+    border:none;
+    background-color:transparent;
+    color:var(--link-hover-nobackground-color);
 }
 
-header nav ul li a:active {
-    border: none;
-    background-color: transparent;
-    color: var(--link-active-nobackground-color);
-    text-decoration: underline;
+header nav ul li a:active{
+border: none;
+background-color:transparent;
+color: var(--link-active-nobackground-color);
+text-decoration: underline;
 
 }
 
@@ -360,12 +366,12 @@ section:nth-of-type(1) {
 
 section:nth-of-type(1) h1 {
     font-size: 2.5em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico", Arial, Helvetica, sans-serif;
     line-height: 100%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
 
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size: 2.2em;
+    font-weight: 750;
 }
 
 
@@ -373,7 +379,7 @@ section:nth-of-type(1) h1 {
 section:nth-of-type(1) p {
 
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.05em;
     margin-top: 1em;
 
@@ -417,14 +423,11 @@ section:nth-of-type(2) p {
 }
 
 h2:nth-of-type(2) {
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
     margin: 5em 1em 0em 1em;
-    font-weight: 700;
-
-
 }
 
 section:nth-of-type(3) {
@@ -443,7 +446,7 @@ section:nth-of-type(3) li {
     flex-direction: column;
     text-align: start;
     list-style: none;
-    margin: 0;
+    margin:0;
 }
 
 section:nth-of-type(3) img {
@@ -522,7 +525,7 @@ section:nth-of-type(4) a {
     text-align: center;
     font-size: 1em;
     width: 12em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -576,17 +579,16 @@ section:nth-of-type(6) {
 section:nth-of-type(6) h2 {
     text-align: left;
     margin: 0 1.5em 0 0.7em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -.01em;
-    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 section:nth-of-type(6) p {
     font-size: 1.1em;
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.05em;
     margin: 1em 1.5em 1em 1em;
 }
@@ -648,12 +650,11 @@ section:nth-of-type(7) {
 
 section:nth-of-type(7) h2 {
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -.01em;
-    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 section:nth-of-type(7) ul {
@@ -669,10 +670,10 @@ section:nth-of-type(7) li {
 
 section:nth-of-type(7) li h3 {
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -.01em;
+    letter-spacing: 0.02em;
 
 }
 
@@ -695,11 +696,10 @@ section:nth-of-type(8) h2 {
     text-align: left;
     margin-top: 0;
     margin-left: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -.01em;
-    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 section:nth-of-type(8) p {
@@ -714,7 +714,7 @@ section:nth-of-type(8) p {
 section:nth-of-type(8) li h3 {
     text-align: left;
     margin: 0em 1.5em 0 0.7em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2em;
     line-height: 130%;
     font-weight: 550;
@@ -740,12 +740,11 @@ section:nth-of-type(9) h2 {
     text-align: left;
     margin-top: 0;
     margin-left: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.7em;
-    line-height: 100%;
-    letter-spacing: -.01em;
+    line-height: 130%;
+    letter-spacing: 0.02em;
     padding: 4em 0 0 0;
-    font-weight: 700;
 }
 
 section:nth-of-type(9) a {
@@ -755,7 +754,7 @@ section:nth-of-type(9) a {
     font-size: 1em;
     text-decoration: none;
     width: 9em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -767,7 +766,7 @@ section:nth-of-type(10) {
 }
 
 section:nth-of-type(10) h5 {
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
@@ -824,18 +823,14 @@ input:checked+span:before {
 
 /* -------------------------------------------------------------betalen
  */
-.betalen p {
+ .betalen p {
     text-align: left;
     margin: 2.5em 1.5em 2em 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     font-weight: lighter;
     line-height: 130%;
-    letter-spacing: -.01em;
-
-    font-size: 1.5em;
-    font-weight: 750;
-
+    letter-spacing: 0.02em;
 }
 
 .betalen section:nth-of-type(1) {
@@ -849,16 +844,13 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(1) h1 {
     font-size: 2.7em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-weight: lighter;
     line-height: 100%;
     letter-spacing: 0.01em;
     margin: 0;
     text-align: left;
     width: 6em;
-
-    font-size: 2.2em;
-    font-weight: 750;
 
 }
 
@@ -872,23 +864,21 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(2) h2 {
     font-size: 2.5em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-weight: lighter;
     line-height: 100%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     margin: 0;
-
-    font-size: 2.2em;
-    font-weight: 750;
 }
 
 .betalen section:nth-of-type(2) p {
     font-size: 1.1em;
     letter-spacing: 0.03em;
-    font-weight: lighter;
+    font-weight: 1;
     margin: 0;
     margin-top: 1em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -916,12 +906,11 @@ input:checked+span:before {
 }
 
 .betalen section:nth-of-type(3) li p {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
     margin: 0;
-    font-weight: lighter;
 }
 
 .betalen section:nth-of-type(4) {
@@ -942,12 +931,11 @@ input:checked+span:before {
 }
 
 .betalen section:nth-of-type(4) p {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
     margin: 0;
-    font-weight: lighter;
 }
 
 .betalen section:nth-of-type(4) a {
@@ -982,9 +970,10 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(5) h2 {
     font-size: 2.5em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     line-height: 100%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     margin: 0;
     margin-top: 1em;
 }
@@ -995,8 +984,7 @@ input:checked+span:before {
     font-weight: 1;
     margin: 0;
     margin-top: 1em;
-    font-family: Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -1005,6 +993,7 @@ input:checked+span:before {
     padding: 0;
     background-color: transparent;
     text-align: left;
+
 
 }
 
@@ -1040,12 +1029,11 @@ input:checked+span:before {
 }
 
 .betalen section:nth-of-type(6) li p {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
     margin: 0;
-    font-weight: lighter;
 }
 
 .betalen section:nth-of-type(7) {
@@ -1066,7 +1054,7 @@ input:checked+span:before {
     padding: 0.5em;
     text-align: left;
 
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
@@ -1090,7 +1078,6 @@ input:checked+span:before {
     line-height: 1.5em;
     letter-spacing: 0.05em;
     margin: 0;
-    font-weight: lighter;
 }
 
 .betalen section:nth-of-type(7) a {
@@ -1128,18 +1115,16 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(8) h2 {
     font-size: 2.5em;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     line-height: 100%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     margin: 0;
-    font-weight: 700;
-
-
 }
 
 .betalen section:nth-of-type(8) p {
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.03em;
     font-weight: 1;
     margin: 0;
@@ -1162,7 +1147,7 @@ input:checked+span:before {
     flex-direction: column;
     text-align: start;
     list-style: none;
-    margin: 0;
+    margin:0;
 }
 
 .betalen section:nth-of-type(9) li img {
@@ -1182,7 +1167,6 @@ input:checked+span:before {
     line-height: 1.5em;
     letter-spacing: 0.05em;
     margin: 0;
-    font-weight: lighter;
 }
 
 .betalen section:nth-of-type(10) {
@@ -1193,12 +1177,11 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(10) h2 {
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 2.5em;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.02em;
 }
 
 .betalen section:nth-of-type(10) ul {
@@ -1216,10 +1199,10 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(10) li h3 {
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 130%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
 
 }
 
@@ -1232,9 +1215,8 @@ input:checked+span:before {
     margin-left: 0;
     margin-top: 1em;
     margin-bottom: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2em;
-    font-weight: lighter;
 
 }
 
@@ -1288,13 +1270,12 @@ input:checked+span:before {
 
 .betalen section:nth-of-type(12) h2 {
     text-align: left;
-    font-family: Helvetica, sans-serif;
+    font-family: "aestetico",Arial, Helvetica, sans-serif;
     font-size: 1.8em;
-    line-height: 100%;
-    letter-spacing: -0.01em;
+    line-height: 130%;
+    letter-spacing: 0.02em;
     margin-left: 1.1em;
     margin-top: 2.2em;
-    font-weight: 700;
 }
 
 .betalen section:nth-of-type(12) p {
@@ -1302,7 +1283,7 @@ input:checked+span:before {
     letter-spacing: 0.03em;
     font-weight: 1;
     margin: 1em 1.5em 3em 1.5em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -1313,7 +1294,7 @@ input:checked+span:before {
     font-size: 1em;
     text-decoration: none;
     width: 9em;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 
 }
@@ -1427,7 +1408,7 @@ footer section:first-of-type {
 }
 
 footer section:first-of-type a {
-    background-color: var(--link-hover-background-color);
+    background-color: white;
     padding: 0.7em;
     margin: 1em;
     margin-left: 0em;
@@ -1465,11 +1446,11 @@ footer>ul {
     list-style: none;
 }
 
-footer>ul li {
+footer > ul li {
     padding: 0.25em 0;
 }
 
-footer>ul a {
+footer > ul a {
     color: var(--footer-text-color);
     text-decoration: none;
     font-size: 0.75em;
